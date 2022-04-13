@@ -1,0 +1,173 @@
+@import "variables";
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+
+    h1{
+        font-family: "Roboto";
+    }
+    .contacts{
+        display: flex;
+        .list{
+            .panel_users{
+                .panel_wrapper{
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    margin-bottom: 15px;
+                }
+
+            }
+            .container{
+                margin: 0 auto;
+                width: 100%;
+                max-width: 600px;
+                .list_item{
+                    cursor: pointer;
+                    display: flex;
+                    width: 100%;
+                    height: 100px;
+                    box-sizing: border-box;
+                    text-align: left;
+                    padding: 8px 16px;
+                    border-radius: 2px;
+                    align-items: center;
+                    justify-content: space-between;
+                    min-width: 500px;
+                    .info{
+                        display: flex;
+                        align-items: center;
+                        .avatar{
+                            max-width: 60px;
+                            img{
+                                border-radius: 50%;
+                                width: 100%;
+                            }
+                        }
+            
+                        .text{
+                            margin-left: 25px;
+                            h3{
+                                margin: 0;
+                            }
+                            .key{
+                                font-weight: 800;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                    
+        
+                    .tools{
+                        display: flex;
+                        height: 100%;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        
+                        
+                        .toolbox{
+                            display: none;               
+                            justify-content: flex-end;
+                        }
+                        .score{
+                            color: $colorStar;
+                        }
+                    }
+        
+                    &:hover{
+                        background-color: $hoverAvatar;
+                        .tools{    
+                            justify-content: space-between;           
+                            .toolbox{
+                                display: flex;
+                            }
+                        }
+                    }
+
+                    &.disabled {
+                        color: $colorDisabled;
+                        pointer-events: none;
+                    }
+                }
+                
+            }
+        }
+    
+        .create-user{
+            margin: 0 auto;
+            width: 50%;
+            max-width: 600px;
+            .input_wrapper{
+                margin: 0 auto;
+                width: 100%;
+                margin-bottom: 15px;
+                button{
+                    margin-right: 10px;
+                }
+            }
+            .double_input_wrapper{
+                display: flex;
+                margin: 0 auto;
+                width: 100%;
+                margin-bottom: 15px;
+                & div {
+                    &:first-child{
+                        margin-right: 15px;
+                    }
+    
+                }
+            }
+            .double_button_wrapper{
+                display: flex;
+                margin: 0 auto;
+                width: 100%;
+                justify-content: space-evenly;
+            }
+        }
+    }
+    
+    .login{
+        width: 50%;
+        max-width: 450px;
+        margin: 0 auto;
+        .input_wrapper{
+            margin: 0 auto;
+            width: 100%;
+            margin-bottom: 15px;
+            button{
+                margin-right: 10px;
+            }
+        }
+    }
+    
+    .error{
+        color: red;
+    }
+}
+
+
+@media (max-width: 1100px)  {
+    .wrapper{
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    
+        h1{
+            font-family: "Roboto";
+        }
+        .contacts{
+            display: flex;
+            flex-direction: column;
+            .create-user{
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

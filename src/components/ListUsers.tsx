@@ -3,11 +3,7 @@ import React, { FC } from 'react';
 import User from '../components/User/User';
 import { useTypedSelector } from '../hooks/useTypedSelector';
 
-export interface IListUsersProps {
-}
-
-
-const ListUsers: FC<IListUsersProps>  = () => {
+const ListUsers: FC = () => {
 
   const { users, editing, filtersUsers } = useTypedSelector(state => state.users);
 

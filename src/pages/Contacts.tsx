@@ -3,11 +3,7 @@ import CreateUser from '../components/CreateUser/CreateUser';
 import ListUsers from '../components/ListUsers';
 import PanelUsers from '../components/PanelUsers/PanelUsers';
 
-export interface IContactsProps {
-}
-
-
-const Contacts: FC<IContactsProps>  = () => {
+const Contacts: FC  = () => {
 
   return (
     <div >

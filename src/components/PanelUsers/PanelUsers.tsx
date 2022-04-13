@@ -1,15 +1,9 @@
-import { Button, Input } from '@mui/material';
+
 import React, { FC } from 'react';
 import Search from './Search';
 import Sort from './Sort';
 
-export interface IPanelUsersProps {
-}
-
-
-const PanelUsers: FC<IPanelUsersProps>  = () => {
-
-
+const PanelUsers: FC  = () => {
 
     return (
         <div className='panel_users'>

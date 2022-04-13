@@ -1,16 +1,10 @@
 import { MenuItem, Select } from '@mui/material';
 import React, { FC, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import useInput from '../../hooks/useInput';
 import useSelect from '../../hooks/useSelect';
-import { useTypedSelector } from '../../hooks/useTypedSelector';
 import { sortUserAction } from '../../store/action-creators/user-action';
 
-export interface ISortProps {
-}
-
-
-const Sort: FC<ISortProps>  = () => {
+const Sort: FC  = () => {
 
     const sort = useSelect('name');
 

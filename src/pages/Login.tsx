@@ -4,10 +4,6 @@ import React, { FC, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import useInput from '../hooks/useInput';
 
-export interface ILoginProps {
-}
-
-
 const base = [
   {
     login: "admin",
@@ -20,7 +16,7 @@ const base = [
 ]
 
 
-const Login: FC<ILoginProps>  = () => {
+const Login: FC  = () => {
 
   const login = useInput('');
   const password = useInput('');

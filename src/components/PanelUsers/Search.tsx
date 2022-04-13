@@ -1,15 +1,11 @@
-import { Button, Input } from '@mui/material';
+import { Input } from '@mui/material';
 import React, { FC, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import useInput from '../../hooks/useInput';
 import { useTypedSelector } from '../../hooks/useTypedSelector';
 import { filterUserAction } from '../../store/action-creators/user-action';
 
-export interface ISearchProps {
-}
-
-
-const Search: FC<ISearchProps>  = () => {
+const Search: FC  = () => {
 
     const { users  } = useTypedSelector(state => state.users);
 

@@ -6,11 +6,7 @@ import { useTypedSelector } from '../../hooks/useTypedSelector';
 import { addUserAction, updateUserAction } from '../../store/action-creators/user-action';
 import { IUser } from '../../types/user-type';
 
-export interface ICreateUserProps {
-
-}
-
-const CreateUser: FC<ICreateUserProps>  = () => {
+const CreateUser: FC  = () => {
 
   const name = useInput('');
   const email = useInput('');
